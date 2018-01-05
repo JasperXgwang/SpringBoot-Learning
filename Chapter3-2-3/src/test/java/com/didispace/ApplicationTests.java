@@ -25,8 +25,8 @@ public class ApplicationTests {
 
 	@Before
 	public void setUp() {
-		jdbcTemplate1.update("DELETE  FROM  USER ");
-		jdbcTemplate2.update("DELETE  FROM  USER ");
+		jdbcTemplate1.update("DELETE  FROM  user ");
+		jdbcTemplate2.update("DELETE  FROM  user ");
 	}
 
 	@Test
