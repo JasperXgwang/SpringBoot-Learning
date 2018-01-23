@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ComputeController {
+public class ComputeController_A {
 
     private final Logger logger = Logger.getLogger(getClass());
 
@@ -22,7 +22,7 @@ public class ComputeController {
         ServiceInstance instance = client.getLocalServiceInstance();
         Integer r = a + b;
         logger.info("/add, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" + r);
-        return "From Service-B, Result is " + r;
+        return "From Service-A, Result is " + r;
     }
 
 }

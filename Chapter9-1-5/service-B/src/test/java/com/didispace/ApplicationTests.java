@@ -1,6 +1,6 @@
 package com.didispace;
 
-import com.didispace.web.ComputeController;
+import com.didispace.web.ComputeController_B;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,7 +21,7 @@ public class ApplicationTests {
 
 	@Before
 	public void setUp() throws Exception {
-		mvc = MockMvcBuilders.standaloneSetup(new ComputeController()).build();
+		mvc = MockMvcBuilders.standaloneSetup(new ComputeController_B()).build();
 	}
 
 	@Test
