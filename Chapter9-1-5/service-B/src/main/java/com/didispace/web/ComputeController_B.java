@@ -20,7 +20,7 @@ public class ComputeController_B {
     @RequestMapping(value = "/add" ,method = RequestMethod.GET)
     public String add(@RequestParam Integer a, @RequestParam Integer b) {
         ServiceInstance instance = client.getLocalServiceInstance();
-        Integer r = a + b;
+        Integer r = a / b;
         logger.info("/add, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" + r);
         return "From Service-B, Result is " + r;
     }
